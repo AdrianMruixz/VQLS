@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vqls-full"
+version = "0.1.0"
+description = "VQLS with TREX/ZNE for four PDE families"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "qiskit>=1.0",
+    "qiskit-aer>=0.14",
+    "mitiq>=0.40",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "ruff"]
+ibm = ["qiskit-ibm-runtime>=0.25"]
+
+[tool.setuptools.packages.find]
+include = ["core*", "physics*", "training*", "qem*", "hardware*", "figs*", "scripts*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# Data and results (NEVER commit)
+*.npz
+*.npy
+*.csv
+*.json
+*.pdf
+*.png
+*.h5
+*.qpy
+
+# Logs
+*.log
+*_qem*.log
+*_fix.log
+*_seq.log
+
+# Backups
+*_backup.py
+*.bak
+*.bak.*
+_archive*/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Jupyter
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.token
+*_credentials.json
+qiskit-ibm.json
